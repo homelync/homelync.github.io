@@ -1,14 +1,35 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "entryPoints": ["../reading-consumer/src/model/package/messageContracts/external/index.ts"],
-    "tsconfig": "../reading-consumer/src/model/package/messageContracts/external/tsconfig.doc.json",
+    "entryPoints": ["../reading-consumer/src/model/package/messaging/external/index.ts"],
+    "tsconfig": "../reading-consumer/src/model/package/messaging/external/tsconfig.doc.json",
     "disableSources": true,
     "categorizeByGroup": false,
+    "excludeNotDocumentedKinds": [
+        "Module",
+        "Namespace",
+        "Enum",
+        "Variable",
+        "Function",
+        "Class",
+        "Interface",
+        "Constructor",
+        "Property",
+        "Method",
+        "CallSignature",
+        "IndexSignature",
+        "ConstructorSignature",
+        "Accessor",
+        "GetSignature",
+        "SetSignature",
+        "TypeAlias",
+        "Reference"
+    ],
     "sort": ["kind"],
     "categoryOrder": [
         "MessageTypes",
         "Contracts",
-        "Enums"
+        "Enums",
+        "Common"
     ],
     "out": "developers/data-feed/schema"
 }

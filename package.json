@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "doc": "./node_modules/typedoc/bin/typedoc --excludeInternal --plugin none"
+    "doc": "./node_modules/typedoc/bin/typedoc --excludeInternal --plugin none",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "doc": "/home/sam/code/reading-consumer/src/model/package/messaging/external/**/*.*"
   },
   "author": "",
   "license": "ISC",

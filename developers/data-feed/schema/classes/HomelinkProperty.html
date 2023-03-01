@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>HomelinkProperty | HomeLINK Data Feed</title><meta name="description" content="Documentation for HomeLINK Data Feed"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script async src="../assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>HomelinkProperty | HomeLINK Schemas for Developers</title><meta name="description" content="Documentation for HomeLINK Schemas for Developers"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script async src="../assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -6,15 +6,24 @@
 <div id="tsd-toolbar-links"></div></div>
 <ul class="results">
 <li class="state loading">Preparing search index...</li>
-<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">HomeLINK Data Feed</a></div>
+<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">HomeLINK Schemas for Developers</a></div>
 <div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
 <div class="container container-main">
 <div class="col-8 col-content">
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
-<li><a href="../modules.html">HomeLINK Data Feed</a></li>
+<li><a href="../modules.html">HomeLINK Schemas for Developers</a></li>
 <li><a href="HomelinkProperty.html">HomelinkProperty</a></li></ul>
 <h1>Class HomelinkProperty</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>Represents an action performed against a property</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h3>Example</h3>
+</a>
+<pre><code><span class="hl-0">{</span><br/><span class="hl-0">    </span><span class="hl-1">// message meta-data</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;__IDENTITY&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;12ec1de8-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;action&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;ADD&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;actionTimestamp&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;2023-01-07T17:59:18.659Z&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">     </span><span class="hl-1">// property details</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;landlordReference&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;SAMHOMES&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;propertyId&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;12ec1de8-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;propertyReference&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;SAMHOMES_MyHome&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;propertyDisplayReference&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;MyHome&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;installedBy&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;dave@homelync.io&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">    </span><span class="hl-1">// address details</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;address1&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;Buckingham Palace&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;address2&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;Westminster&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;city&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;London&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;postcode&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;SW1A1AA&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;country&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;UK&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;addressConfidence&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;FULL&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">    </span><span class="hl-1">// property meta-data</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;deviceCount&quot;</span><span class="hl-0">: </span><span class="hl-4">4</span><br/><span class="hl-0"> }</span>
+</code></pre>
+</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -30,79 +39,216 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="HomelinkProperty.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>landlord<wbr/>Reference</span></a>
+<div class="tsd-index-list"><a href="HomelinkProperty.html#__IDENTITY" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>__IDENTITY</span></a>
+<a href="HomelinkProperty.html#action" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action</span></a>
+<a href="HomelinkProperty.html#actionTimestamp" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action<wbr/>Timestamp</span></a>
+<a href="HomelinkProperty.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>landlord<wbr/>Reference</span></a>
 <a href="HomelinkProperty.html#propertyId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Id</span></a>
 <a href="HomelinkProperty.html#propertyReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Reference</span></a>
 <a href="HomelinkProperty.html#propertyDisplayReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Display<wbr/>Reference</span></a>
-<a href="HomelinkProperty.html#deviceCount" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Count</span></a>
+<a href="HomelinkProperty.html#installedBy" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>installed<wbr/>By</span></a>
 <a href="HomelinkProperty.html#address1" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address1</span></a>
 <a href="HomelinkProperty.html#address2" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address2</span></a>
 <a href="HomelinkProperty.html#city" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>city</span></a>
 <a href="HomelinkProperty.html#postcode" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>postcode</span></a>
 <a href="HomelinkProperty.html#country" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>country</span></a>
 <a href="HomelinkProperty.html#addressConfidence" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address<wbr/>Confidence</span></a>
-<a href="HomelinkProperty.html#action" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action</span></a>
-<a href="HomelinkProperty.html#actionTimestamp" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action<wbr/>Timestamp</span></a>
-<a href="HomelinkProperty.html#__IDENTITY" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>__IDENTITY</span></a>
+<a href="HomelinkProperty.html#deviceCount" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Count</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="landlordReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
-<div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.landlordReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Id</span><a href="#propertyId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.propertyId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Reference</span><a href="#propertyReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.propertyReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyDisplayReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Display<wbr/>Reference</span><a href="#propertyDisplayReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Display<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.propertyDisplayReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="deviceCount" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>device<wbr/>Count</span><a href="#deviceCount" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">device<wbr/>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.deviceCount</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="address1" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>address1</span><a href="#address1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">address1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.address1</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="address2" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>address2</span><a href="#address2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">address2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.address2</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="city" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>city</span><a href="#city" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">city<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.city</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="postcode" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>postcode</span><a href="#postcode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">postcode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.postcode</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="country" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>country</span><a href="#country" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">country<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.country</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="addressConfidence" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>address<wbr/>Confidence</span><a href="#addressConfidence" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">address<wbr/>Confidence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.addressConfidence</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="__IDENTITY" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>__IDENTITY</span><a href="#__IDENTITY" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
+<div class="tsd-signature">__IDENTITY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique identifier of an entity.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>All entities will include an <code>__IDENTITY</code> field. This is intended to allow a consumer to
+easily understand which field should be used as a unique domain key. The value contained within
+<code>__IDENTITY</code> will also be present within the message under an entity specific field name e.g. <code>propertyId</code>, <code>deviceId</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.__IDENTITY</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="action" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action</span><a href="#action" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/OperationAction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">OperationAction</a></div><aside class="tsd-sources">
+<div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/PropertyOperationAction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PropertyOperationAction</a></div>
+<div class="tsd-comment tsd-typography"><p>Specifies the action that generated a message.</p>
+</div><aside class="tsd-sources">
 <p>Implementation of HomelinkPropertyContract.action</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="actionTimestamp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action<wbr/>Timestamp</span><a href="#actionTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The UTC time at which and action was performed.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Is an ISO8601 formatted date string.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p>   <code>2023-02-21T10:11:12.123Z</code></p>
+</div><aside class="tsd-sources">
 <p>Implementation of HomelinkPropertyContract.actionTimestamp</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="__IDENTITY" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>__IDENTITY</span><a href="#__IDENTITY" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">__IDENTITY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkPropertyContract.__IDENTITY</p></aside></section></section></div>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="landlordReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Your (landlords) unique HomeLINK reference</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>This will match the landlordReference you specified when subscribing to this feed.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h5>Example</h5>
+</a>
+<p> <code>SAMHOMES</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.landlordReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyId" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Id</span><a href="#propertyId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique identifier for the property.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Is a uuid (v4) aka a GUID.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>12ec1de8-b782-11ed-9a49-0242ac110002</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.propertyId</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Reference</span><a href="#propertyReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique string reference of the property (UPRN), as entered at installation time</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Please note it will be prefixed with your <code>landlordReference</code></p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>SAMHOMES_MyHome</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.propertyReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyDisplayReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Display<wbr/>Reference</span><a href="#propertyDisplayReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Display<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique reference of the property (UPRN) as it id displayed on the dashboard.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>MyHome</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.propertyDisplayReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="installedBy" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>installed<wbr/>By</span><a href="#installedBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">installed<wbr/>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The username of the person who last installed a device at this property.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>dave@homelync.io</code>
+*</p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.installedBy</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="address1" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>address1</span><a href="#address1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">address1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>First line of an address, normally house name of number</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Will also include a flat identifier, if relavant</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p>Buckingham Palace</p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.address1</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="address2" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>address2</span><a href="#address2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">address2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Second line of an address, normally area. <code>nullable</code></p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>Westminster</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.address2</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="city" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>city</span><a href="#city" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">city<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The city or town to which the address belongs</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>London</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.city</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="postcode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>postcode</span><a href="#postcode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">postcode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>A postcode</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Will not contain any spaces. All postcodes have spaces stripped at creation time.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>SW1A1AA</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.postcode</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="country" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>country</span><a href="#country" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">country<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The country to which an address blongs.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>UK</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.country</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="addressConfidence" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>address<wbr/>Confidence</span><a href="#addressConfidence" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">address<wbr/>Confidence<span class="tsd-signature-symbol">:</span> <a href="../enums/AddressConfidence.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AddressConfidence</a></div>
+<div class="tsd-comment tsd-typography"><p>A confidence indicator advising if HomeLINK has been able too successfully geo-code the address.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>FULL</code></li>
+<li><code>PARTIAL</code></li>
+<li><code>NONE</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.addressConfidence</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="deviceCount" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>device<wbr/>Count</span><a href="#deviceCount" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">device<wbr/>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-comment tsd-typography"><p>The number of devices installed at the property at the time this message was sent</p>
+</div><aside class="tsd-sources">
+<p>Implementation of HomelinkPropertyContract.deviceCount</p></aside></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -122,26 +268,27 @@
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
-<li><a href="../modules.html">HomeLINK <wbr/>Data <wbr/>Feed</a>
+<li><a href="../modules.html">HomeLINK <wbr/>Schemas for <wbr/>Developers</a>
 <ul></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
 <li class="current tsd-kind-class"><a href="HomelinkProperty.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg><span>Homelink<wbr/>Property</span></a>
 <ul>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#__IDENTITY" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>__IDENTITY</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#action" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#actionTimestamp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action<wbr/>Timestamp</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#landlordReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>landlord<wbr/>Reference</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#propertyId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Id</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#propertyReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Reference</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#propertyDisplayReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Display<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#deviceCount" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Count</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#installedBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>installed<wbr/>By</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#address1" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address1</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#address2" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address2</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#city" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>city</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#postcode" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>postcode</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#country" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>country</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#addressConfidence" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address<wbr/>Confidence</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#action" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#actionTimestamp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action<wbr/>Timestamp</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#__IDENTITY" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>__IDENTITY</a></li></ul></li></ul></nav></div></div>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkProperty.html#deviceCount" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Count</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/main.js"></script></body></html>
