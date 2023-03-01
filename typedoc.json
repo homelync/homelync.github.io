@@ -1,0 +1,14 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": ["../reading-consumer/src/model/package/messageContracts/external/index.ts"],
+    "tsconfig": "../reading-consumer/src/model/package/messageContracts/external/tsconfig.doc.json",
+    "disableSources": true,
+    "categorizeByGroup": false,
+    "sort": ["kind"],
+    "categoryOrder": [
+        "MessageTypes",
+        "Contracts",
+        "Enums"
+    ],
+    "out": "developers/data-feed/schema"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tsdoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "./node_modules/typedoc/bin/typedoc --excludeInternal --plugin none"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.23.26"
+  }
+}
