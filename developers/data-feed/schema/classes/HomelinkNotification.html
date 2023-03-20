@@ -17,15 +17,37 @@
 <h1>Class HomelinkNotification</h1></div>
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Represents a notification sent to a single recipient for one or more triggering events</p>
+
+<a href="#example-json" id="example-json" style="color: inherit; text-decoration: none;">
+  <h3>Example JSON</h3>
+</a>
+<pre><code><span class="hl-0">{</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;__IDENTITY&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;8e068f3c-a771-4869-89a5-a477d8cdbcd9&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;notificationId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;8e068f3c-a771-4869-89a5-a477d8cdbcd9&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;recipientLandlordPersonReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;person-123&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;landlordReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SAMHOMES&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;action&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SEND&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;actionTimestamp&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2023-03-16T07:42:10.777Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;recipientEmail&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;sam@homelync.io&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;recipientSmsNumber&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;+447111115656&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;recipientUsername&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;sam.shiles&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;recipientType&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;LANDLORD&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;channel&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;EMAIL&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;notificationDate&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2023-03-16T07:42:10.777Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;notificationDefinitionId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2dc540c1-f3da-4323-9d3c-60e2c5b8d26a&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;notificationDefinitionName&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;Maintenance Notifications&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;notificationDefinitionDescription&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;My Maintenance Notifications&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-1">&quot;alerts&quot;</span><span class="hl-0">: [</span><br/><span class="hl-0">     </span><span class="hl-2">see</span><span class="hl-0">: ^</span><span class="hl-2">link</span><span class="hl-0"> </span><span class="hl-2">below</span><br/><span class="hl-0">  ]</span><br/><span class="hl-0">}</span>
+</code></pre>
+<p>^for examples of an alert see: <a href="HomelinkNotificationAlert.html">&#39;HomelinkNotificationAlert&#39;</a></p>
+
+<a href="#example-database-schema" id="example-database-schema" style="color: inherit; text-decoration: none;">
+  <h3>Example Database Schema</h3>
+</a>
+
+<a href="#mysql" id="mysql" style="color: inherit; text-decoration: none;">
+  <h4>Mysql</h4>
+</a>
+<pre><code><span class="hl-0">  </span><span class="hl-3">CREATE</span><span class="hl-0"> </span><span class="hl-3">TABLE</span><span class="hl-0"> </span><span class="hl-1">`notificationMessage`</span><span class="hl-0"> (</span><br/><span class="hl-0">   </span><span class="hl-1">`__IDENTITY`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`action`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">10</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`actionTimestamp`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`landlordReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`notificationId`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`recipientType`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`notificationDate`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`notificationDefinitionId`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`notificationDefinitionName`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`notificationDefinitionDescription`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-3">PRIMARY</span><span class="hl-0"> </span><span class="hl-4">KEY</span><span class="hl-0"> (</span><span class="hl-1">`notificationId`</span><span class="hl-0">)</span><br/><span class="hl-0">) </span><span class="hl-3">ENGINE</span><span class="hl-0">=</span><span class="hl-2">InnoDB</span><span class="hl-0">;</span>
+</code></pre>
+<ul>
+<li></li>
+</ul>
 </div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">HomelinkNotification</span></li></ul></section>
+<li><span class="tsd-signature-type">AbstractNotificationBase</span>
+<ul class="tsd-hierarchy">
+<li><span class="target">HomelinkNotification</span></li></ul></li></ul></section>
 <section class="tsd-panel">
 <h4>Implements</h4>
 <ul class="tsd-hierarchy">
-<li><span class="tsd-signature-type">HomelinkNotificationContract</span></li></ul></section>
+<li><span class="tsd-signature-type">Required</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ExternalNotificationPayload</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -38,17 +60,17 @@
 <a href="HomelinkNotification.html#actionTimestamp" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action<wbr/>Timestamp</span></a>
 <a href="HomelinkNotification.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>landlord<wbr/>Reference</span></a>
 <a href="HomelinkNotification.html#notificationId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notification<wbr/>Id</span></a>
-<a href="HomelinkNotification.html#recipientEmail" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Email</span></a>
-<a href="HomelinkNotification.html#recipientSmsNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Sms<wbr/>Number</span></a>
-<a href="HomelinkNotification.html#recipientUsername" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Username</span></a>
-<a href="HomelinkNotification.html#recipientLandlordPersonReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference</span></a>
 <a href="HomelinkNotification.html#recipientType" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Type</span></a>
-<a href="HomelinkNotification.html#channel" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>channel</span></a>
 <a href="HomelinkNotification.html#notificationDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notification<wbr/>Date</span></a>
 <a href="HomelinkNotification.html#notificationDefinitionId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notification<wbr/>Definition<wbr/>Id</span></a>
 <a href="HomelinkNotification.html#notificationDefinitionName" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notification<wbr/>Definition<wbr/>Name</span></a>
 <a href="HomelinkNotification.html#notificationDefinitionDescription" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>notification<wbr/>Definition<wbr/>Description</span></a>
 <a href="HomelinkNotification.html#alerts" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>alerts</span></a>
+<a href="HomelinkNotification.html#recipientEmail" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Email</span></a>
+<a href="HomelinkNotification.html#recipientSmsNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Sms<wbr/>Number</span></a>
+<a href="HomelinkNotification.html#recipientUsername" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Username</span></a>
+<a href="HomelinkNotification.html#recipientLandlordPersonReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference</span></a>
+<a href="HomelinkNotification.html#channel" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>channel</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
@@ -64,29 +86,17 @@
 easily understand which field should be used as a unique domain key. The value contained within
 <code>__IDENTITY</code> will also be present within the message under an entity specific field name e.g. <code>propertyId</code>, <code>deviceId</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.__IDENTITY</p></aside></section>
+<p>Implementation of Required.__IDENTITY</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="action" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action</span><a href="#action" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/NotificationOperationAction.html#send" class="tsd-signature-type" data-tsd-kind="Enumeration Member">send</a></div>
+<div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/NotificationOperationAction.html#SEND" class="tsd-signature-type" data-tsd-kind="Enumeration Member">SEND</a></div>
 <div class="tsd-comment tsd-typography"><p>Specifies the action that generated a message.</p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.action</p></aside></section>
+<p>Implementation of Required.action</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="actionTimestamp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action<wbr/>Timestamp</span><a href="#actionTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The UTC time at which and action was performed.</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Is an ISO8601 formatted date string.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p>   <code>2023-02-21T10:11:12.123Z</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.actionTimestamp</p></aside></section>
+<div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.actionTimestamp</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="landlordReference" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -102,57 +112,63 @@ easily understand which field should be used as a unique domain key. The value c
 </a>
 <p> <code>SAMHOMES</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.landlordReference</p></aside></section>
+<p>Implementation of Required.landlordReference</p>
+<p>Overrides AbstractNotificationBase.landlordReference</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="notificationId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>notification<wbr/>Id</span><a href="#notificationId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">notification<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.notificationId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="recipientEmail" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>recipient<wbr/>Email</span><a href="#recipientEmail" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">recipient<wbr/>Email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.recipientEmail</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="recipientSmsNumber" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>recipient<wbr/>Sms<wbr/>Number</span><a href="#recipientSmsNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">recipient<wbr/>Sms<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.recipientSmsNumber</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="recipientUsername" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>recipient<wbr/>Username</span><a href="#recipientUsername" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">recipient<wbr/>Username<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.recipientUsername</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="recipientLandlordPersonReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference</span><a href="#recipientLandlordPersonReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.recipientLandlordPersonReference</p></aside></section>
+<p>Implementation of Required.notificationId</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="recipientType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>recipient<wbr/>Type</span><a href="#recipientType" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">recipient<wbr/>Type<span class="tsd-signature-symbol">:</span> <a href="../types/RecipientType.html" class="tsd-signature-type" data-tsd-kind="Type alias">RecipientType</a></div>
+<div class="tsd-signature">recipient<wbr/>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/NotificationRecipientType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NotificationRecipientType</a></div>
 <div class="tsd-comment tsd-typography"><p>{@inheritDoc NotificationRecipientType}</p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.recipientType</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="channel" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>channel</span><a href="#channel" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">channel<span class="tsd-signature-symbol">:</span> <a href="../enums/NotificationChannel.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NotificationChannel</a></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.channel</p></aside></section>
+<p>Implementation of Required.recipientType</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="notificationDate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>notification<wbr/>Date</span><a href="#notificationDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">notification<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.notificationDate</p></aside></section>
+<p>Implementation of Required.notificationDate</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="notificationDefinitionId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>notification<wbr/>Definition<wbr/>Id</span><a href="#notificationDefinitionId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">notification<wbr/>Definition<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.notificationDefinitionId</p></aside></section>
+<p>Implementation of Required.notificationDefinitionId</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="notificationDefinitionName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>notification<wbr/>Definition<wbr/>Name</span><a href="#notificationDefinitionName" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">notification<wbr/>Definition<wbr/>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.notificationDefinitionName</p></aside></section>
+<p>Implementation of Required.notificationDefinitionName</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="notificationDefinitionDescription" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>notification<wbr/>Definition<wbr/>Description</span><a href="#notificationDefinitionDescription" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">notification<wbr/>Definition<wbr/>Description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.notificationDefinitionDescription</p></aside></section>
+<p>Implementation of Required.notificationDefinitionDescription</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="alerts" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>alerts</span><a href="#alerts" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">alerts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HomelinkAlertContract</span><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkNotificationContract.alerts</p></aside></section></section></div>
+<div class="tsd-signature">alerts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExternalNotificationAlertPayload</span><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
+<p>Implementation of Required.alerts</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="recipientEmail" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>recipient<wbr/>Email</span><a href="#recipientEmail" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">recipient<wbr/>Email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.recipientEmail</p>
+<p>Inherited from AbstractNotificationBase.recipientEmail</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="recipientSmsNumber" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>recipient<wbr/>Sms<wbr/>Number</span><a href="#recipientSmsNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">recipient<wbr/>Sms<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.recipientSmsNumber</p>
+<p>Inherited from AbstractNotificationBase.recipientSmsNumber</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="recipientUsername" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>recipient<wbr/>Username</span><a href="#recipientUsername" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">recipient<wbr/>Username<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.recipientUsername</p>
+<p>Inherited from AbstractNotificationBase.recipientUsername</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="recipientLandlordPersonReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference</span><a href="#recipientLandlordPersonReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.recipientLandlordPersonReference</p>
+<p>Inherited from AbstractNotificationBase.recipientLandlordPersonReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="channel" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>channel</span><a href="#channel" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">channel<span class="tsd-signature-symbol">:</span> <a href="../enums/NotificationChannel.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NotificationChannel</a></div><aside class="tsd-sources">
+<p>Implementation of Required.channel</p>
+<p>Inherited from AbstractNotificationBase.channel</p></aside></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -183,17 +199,17 @@ easily understand which field should be used as a unique domain key. The value c
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#actionTimestamp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action<wbr/>Timestamp</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#landlordReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>landlord<wbr/>Reference</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#notificationId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>notification<wbr/>Id</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#recipientEmail" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Email</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#recipientSmsNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Sms<wbr/>Number</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#recipientUsername" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Username</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#recipientLandlordPersonReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#recipientType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Type</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#channel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>channel</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#notificationDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>notification<wbr/>Date</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#notificationDefinitionId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>notification<wbr/>Definition<wbr/>Id</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#notificationDefinitionName" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>notification<wbr/>Definition<wbr/>Name</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#notificationDefinitionDescription" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>notification<wbr/>Definition<wbr/>Description</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#alerts" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>alerts</a></li></ul></li></ul></nav></div></div>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkNotification.html#alerts" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>alerts</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkNotification.html#recipientEmail" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Email</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkNotification.html#recipientSmsNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Sms<wbr/>Number</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkNotification.html#recipientUsername" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Username</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkNotification.html#recipientLandlordPersonReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>recipient<wbr/>Landlord<wbr/>Person<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkNotification.html#channel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>channel</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/main.js"></script></body></html>

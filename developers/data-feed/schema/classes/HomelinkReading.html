@@ -17,15 +17,39 @@
 <h1>Class HomelinkReading</h1></div>
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Represents a single reading taken from a device at a point in time</p>
+<ul>
+<li>
+<a href="#example-json" id="example-json" style="color: inherit; text-decoration: none;">
+  <h3>Example JSON</h3>
+</a>
+</li>
+</ul>
+<pre><code><span class="hl-0">{</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;__IDENTITY&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2acc1d60-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;action&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ADD&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;actionTimestamp&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2023-03-15T22:14:14.575Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;collectionDate&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2023-03-15T22:14:14.575Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;deviceId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2acc1d60-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;devicePhySerialNumber&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ED12A3EF&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;deviceSerialNumber&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ED12A3EF&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;landlordReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SAMHOMES&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;location&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;LIVINGROOM&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;locationNickname&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;My Living Room&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;manufacturerReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;EI&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;propertyDisplayReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;MyHome&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;propertyId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;12ec1de8-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;propertyReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SAMHOMES_MYHOME&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;readingDate&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2023-03-15T20:00:00.000Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;readingTypeId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;environment.temperature.outdoor&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;room&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;Living Room&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;sourceModel&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;EI1020&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;sourceModelType&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ENVSENSOR&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;unit&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;C&quot;</span><span class="hl-0">,</span><br/><span class="hl-0"> </span><span class="hl-1">&quot;value&quot;</span><span class="hl-0">: </span><span class="hl-5">24.666666666666667</span><br/><span class="hl-0">}</span>
+</code></pre>
+
+<a href="#example-database-schema" id="example-database-schema" style="color: inherit; text-decoration: none;">
+  <h3>Example Database Schema</h3>
+</a>
+
+<a href="#mysql" id="mysql" style="color: inherit; text-decoration: none;">
+  <h4>Mysql</h4>
+</a>
+<pre><code><span class="hl-3">CREATE</span><span class="hl-0"> </span><span class="hl-3">TABLE</span><span class="hl-0"> </span><span class="hl-1">`readingMessage`</span><span class="hl-0"> (</span><br/><span class="hl-0">   </span><span class="hl-1">`__IDENTITY`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`action`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">10</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`actionTimestamp`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`collectionDate`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`deviceId`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`devicePhySerialNumber`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`deviceSerialNumber`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`location`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`locationNickname`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">DEFAULT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`manufacturerReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`propertyDisplayReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`propertyId`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`propertyReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`readingDate`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`readingTypeId`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`room`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`sourceModel`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`sourceModelType`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`unit`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`value`</span><span class="hl-0"> </span><span class="hl-4">decimal</span><span class="hl-0">(</span><span class="hl-5">25</span><span class="hl-0">,</span><span class="hl-5">15</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-3">PRIMARY</span><span class="hl-0"> </span><span class="hl-4">KEY</span><span class="hl-0"> (</span><span class="hl-1">`deviceId`</span><span class="hl-0">, </span><span class="hl-1">`readingDate`</span><span class="hl-0">, </span><span class="hl-1">`readingTypeId`</span><span class="hl-0">)</span><br/><span class="hl-0">) </span><span class="hl-3">ENGINE</span><span class="hl-0">=</span><span class="hl-2">InnoDB</span><span class="hl-0">;</span>
+</code></pre>
+<ul>
+<li></li>
+</ul>
 </div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">HomelinkReading</span></li></ul></section>
+<li><span class="tsd-signature-type">AbstractReadingBase</span>
+<ul class="tsd-hierarchy">
+<li><span class="target">HomelinkReading</span></li></ul></li></ul></section>
 <section class="tsd-panel">
 <h4>Implements</h4>
 <ul class="tsd-hierarchy">
-<li><span class="tsd-signature-type">HomelinkReadingContract</span></li></ul></section>
+<li><span class="tsd-signature-type">Required</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ExternalReadingPayload</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -36,22 +60,24 @@
 <div class="tsd-index-list"><a href="HomelinkReading.html#__IDENTITY" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>__IDENTITY</span></a>
 <a href="HomelinkReading.html#action" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action</span></a>
 <a href="HomelinkReading.html#actionTimestamp" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action<wbr/>Timestamp</span></a>
-<a href="HomelinkReading.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>landlord<wbr/>Reference</span></a>
-<a href="HomelinkReading.html#propertyId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Id</span></a>
-<a href="HomelinkReading.html#propertyReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Reference</span></a>
-<a href="HomelinkReading.html#propertyDisplayReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Display<wbr/>Reference</span></a>
-<a href="HomelinkReading.html#deviceId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Id</span></a>
-<a href="HomelinkReading.html#deviceSerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Serial<wbr/>Number</span></a>
-<a href="HomelinkReading.html#sourceModel" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model</span></a>
-<a href="HomelinkReading.html#sourceModelType" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model<wbr/>Type</span></a>
-<a href="HomelinkReading.html#locationNickname" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location<wbr/>Nickname</span></a>
-<a href="HomelinkReading.html#room" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>room</span></a>
-<a href="HomelinkReading.html#location" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a>
-<a href="HomelinkReading.html#unit" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>unit</span></a>
-<a href="HomelinkReading.html#readingTypeId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>reading<wbr/>Type<wbr/>Id</span></a>
-<a href="HomelinkReading.html#value" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>value</span></a>
-<a href="HomelinkReading.html#readingDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>reading<wbr/>Date</span></a>
-<a href="HomelinkReading.html#collectionDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>collection<wbr/>Date</span></a>
+<a href="HomelinkReading.html#collectionDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>collection<wbr/>Date</span></a>
+<a href="HomelinkReading.html#deviceId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Id</span></a>
+<a href="HomelinkReading.html#devicePhySerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Phy<wbr/>Serial<wbr/>Number</span></a>
+<a href="HomelinkReading.html#deviceSerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Serial<wbr/>Number</span></a>
+<a href="HomelinkReading.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>landlord<wbr/>Reference</span></a>
+<a href="HomelinkReading.html#location" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a>
+<a href="HomelinkReading.html#locationNickname" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location<wbr/>Nickname</span></a>
+<a href="HomelinkReading.html#manufacturerReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>manufacturer<wbr/>Reference</span></a>
+<a href="HomelinkReading.html#propertyDisplayReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Display<wbr/>Reference</span></a>
+<a href="HomelinkReading.html#propertyId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Id</span></a>
+<a href="HomelinkReading.html#propertyReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Reference</span></a>
+<a href="HomelinkReading.html#readingDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>reading<wbr/>Date</span></a>
+<a href="HomelinkReading.html#readingTypeId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>reading<wbr/>Type<wbr/>Id</span></a>
+<a href="HomelinkReading.html#room" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>room</span></a>
+<a href="HomelinkReading.html#sourceModel" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model</span></a>
+<a href="HomelinkReading.html#sourceModelType" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model<wbr/>Type</span></a>
+<a href="HomelinkReading.html#unit" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>unit</span></a>
+<a href="HomelinkReading.html#value" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>value</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
@@ -67,89 +93,26 @@
 easily understand which field should be used as a unique domain key. The value contained within
 <code>__IDENTITY</code> will also be present within the message under an entity specific field name e.g. <code>propertyId</code>, <code>deviceId</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.__IDENTITY</p></aside></section>
+<p>Implementation of Required.__IDENTITY</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="action" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action</span><a href="#action" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/ReadingOperationAction.html#add" class="tsd-signature-type" data-tsd-kind="Enumeration Member">add</a></div>
+<div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/ReadingOperationAction.html#ADD" class="tsd-signature-type" data-tsd-kind="Enumeration Member">ADD</a></div>
 <div class="tsd-comment tsd-typography"><p>Specifies the action that generated a message.</p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.action</p></aside></section>
+<p>Implementation of Required.action</p></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="actionTimestamp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action<wbr/>Timestamp</span><a href="#actionTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The UTC time at which and action was performed.</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Is an ISO8601 formatted date string.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p>   <code>2023-02-21T10:11:12.123Z</code></p>
+<div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.actionTimestamp</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="collectionDate" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>collection<wbr/>Date</span><a href="#collectionDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">collection<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The date/time when a reading was collected/received.</p>
+<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.actionTimestamp</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="landlordReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>Your (landlords) unique HomeLINK reference</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>This will match the landlordReference you specified when subscribing to this feed.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h5>Example</h5>
-</a>
-<p> <code>SAMHOMES</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.landlordReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Id</span><a href="#propertyId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The unique identifier for the property.</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Is a uuid (v4) aka a GUID.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>12ec1de8-b782-11ed-9a49-0242ac110002</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.propertyId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Reference</span><a href="#propertyReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The unique string reference of the property (UPRN), as entered at installation time</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Please note it will be prefixed with your <code>landlordReference</code></p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>SAMHOMES_MyHome</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.propertyReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyDisplayReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Display<wbr/>Reference</span><a href="#propertyDisplayReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Display<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The unique reference of the property (UPRN) as it id displayed on the dashboard.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>MyHome</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.propertyDisplayReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="deviceId" class="tsd-anchor"></a>
+<p>Implementation of Required.collectionDate</p>
+<p>Inherited from AbstractReadingBase.collectionDate</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="deviceId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>device<wbr/>Id</span><a href="#deviceId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">device<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The unique identifier for the device.</p>
@@ -165,94 +128,36 @@ but the <code>deviceSerialNumber</code> will remain consistent.</p>
 </a>
 <p><code>2acc1d60-b782-11ed-9a49-0242ac110002</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.deviceId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="deviceSerialNumber" class="tsd-anchor"></a>
+<p>Implementation of Required.deviceId</p>
+<p>Inherited from AbstractReadingBase.deviceId</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="devicePhySerialNumber" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>device<wbr/>Phy<wbr/>Serial<wbr/>Number</span><a href="#devicePhySerialNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">device<wbr/>Phy<wbr/>Serial<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<p>Implementation of Required.devicePhySerialNumber</p>
+<p>Inherited from AbstractReadingBase.devicePhySerialNumber</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="deviceSerialNumber" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>device<wbr/>Serial<wbr/>Number</span><a href="#deviceSerialNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">device<wbr/>Serial<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.deviceSerialNumber</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="sourceModel" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>source<wbr/>Model</span><a href="#sourceModel" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">source<wbr/>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The model of the device.</p>
+<p>Implementation of Required.deviceSerialNumber</p>
+<p>Inherited from AbstractReadingBase.deviceSerialNumber</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="landlordReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Your (landlords) unique HomeLINK reference</p>
 
 <a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
   <h4>Remarks</h4>
 </a>
-<p>Is a long dynamic enum/lookup list not captured in this type-doc.
-References:</p>
-<ul>
-<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
-<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/model">https://frontier.live.homelync.io/v1/lookup/model</a> (requires authentication)</li>
-</ul>
+<p>This will match the landlordReference you specified when subscribing to this feed.</p>
 
 <a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
+  <h5>Example</h5>
 </a>
-<ul>
-<li><code>EI1025</code></li>
-<li><code>EI1010</code></li>
-<li><code>EI1000G</code></li>
-</ul>
+<p> <code>SAMHOMES</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.sourceModel</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="sourceModelType" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>source<wbr/>Model<wbr/>Type</span><a href="#sourceModelType" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">source<wbr/>Model<wbr/>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>Defines the model type of the device (e.g. is it a fire alarm or a environment sensors?)</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<ul>
-<li><code>ENVSENSOR</code></li>
-<li><code>FIREALARM</code></li>
-<li><code>GATEWWAY</code></li>
-</ul>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.sourceModelType</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="locationNickname" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>location<wbr/>Nickname</span><a href="#locationNickname" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">location<wbr/>Nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>An optional additional free text description of where the device is installed. <code>nullable</code></p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<ul>
-<li><code>Master Bedroom</code></li>
-<li><code>By the main stair case</code></li>
-</ul>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.locationNickname</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="room" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>room</span><a href="#room" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">room<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>A friendly display name for <code>location</code> - see: <a href="../interfaces/CommonFields.html#location">CommonFields.location</a></p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Is a long dynamic enum/lookup list not captured in this type-doc.</p>
-
-<a href="#references" id="references" style="color: inherit; text-decoration: none;">
-  <h4>References:</h4>
-</a>
-<ul>
-<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
-<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/location">https://frontier.live.homelync.io/v1/lookup/location</a> (requires authentication)</li>
-</ul>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<ul>
-<li><code>BATHROOM</code></li>
-<li><code>LIVINGROOM</code></li>
-<li><code>KITCHEN</code></li>
-</ul>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.room</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="location" class="tsd-anchor"></a>
+<p>Implementation of Required.landlordReference</p>
+<p>Inherited from AbstractReadingBase.landlordReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="location" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>location</span><a href="#location" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>A value denoting the unique identifier of the room type in which a device is installed</p>
@@ -279,8 +184,185 @@ References:</p>
 <li><code>KITCHEN</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.location</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="unit" class="tsd-anchor"></a>
+<p>Implementation of Required.location</p>
+<p>Inherited from AbstractReadingBase.location</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="locationNickname" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>location<wbr/>Nickname</span><a href="#locationNickname" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">location<wbr/>Nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>An optional additional free text description of where the device is installed. <code>nullable</code></p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>Master Bedroom</code></li>
+<li><code>By the main stair case</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.locationNickname</p>
+<p>Inherited from AbstractReadingBase.locationNickname</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="manufacturerReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>manufacturer<wbr/>Reference</span><a href="#manufacturerReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">manufacturer<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Defines the manufacturer of the device.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>EI</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.manufacturerReference</p>
+<p>Inherited from AbstractReadingBase.manufacturerReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="propertyDisplayReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Display<wbr/>Reference</span><a href="#propertyDisplayReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Display<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique reference of the property (UPRN) as it id displayed on the dashboard.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>MyHome</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.propertyDisplayReference</p>
+<p>Inherited from AbstractReadingBase.propertyDisplayReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="propertyId" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Id</span><a href="#propertyId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique identifier for the property.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<ul>
+<li>Is a uuid (v4) aka a GUID.</li>
+</ul>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>12ec1de8-b782-11ed-9a49-0242ac110002</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.propertyId</p>
+<p>Inherited from AbstractReadingBase.propertyId</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="propertyReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Reference</span><a href="#propertyReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique string reference of the property (UPRN), as entered at installation time</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Please note it will be prefixed with your <code>landlordReference</code></p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>SAMHOMES_MYHOME</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.propertyReference</p>
+<p>Inherited from AbstractReadingBase.propertyReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="readingDate" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>reading<wbr/>Date</span><a href="#readingDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">reading<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The date/time when a reading was taken.</p>
+<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.readingDate</p>
+<p>Inherited from AbstractReadingBase.readingDate</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="readingTypeId" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>reading<wbr/>Type<wbr/>Id</span><a href="#readingTypeId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">reading<wbr/>Type<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The type of reading taken by HomeLINK IoT devices.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Members listed here may be imcomplete, see references below for details on how to obtain a full list.</p>
+
+<a href="#references" id="references" style="color: inherit; text-decoration: none;">
+  <h4>References:</h4>
+</a>
+<ul>
+<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
+<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/readingType">https://frontier.live.homelync.io/v1/lookup/readingType</a>(requires authentication)</li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.readingTypeId</p>
+<p>Inherited from AbstractReadingBase.readingTypeId</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="room" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>room</span><a href="#room" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">room<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>A friendly display name for <code>location</code> - see: <a href="../interfaces/CommonFields.html#location">CommonFields.location</a></p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Is a long dynamic enum/lookup list not captured in this type-doc.</p>
+
+<a href="#references" id="references" style="color: inherit; text-decoration: none;">
+  <h4>References:</h4>
+</a>
+<ul>
+<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
+<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/location">https://frontier.live.homelync.io/v1/lookup/location</a> (requires authentication)</li>
+</ul>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>BATHROOM</code></li>
+<li><code>LIVINGROOM</code></li>
+<li><code>KITCHEN</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.room</p>
+<p>Inherited from AbstractReadingBase.room</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="sourceModel" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>source<wbr/>Model</span><a href="#sourceModel" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">source<wbr/>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The model of the device.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Is a long dynamic enum/lookup list not captured in this type-doc.
+References:</p>
+<ul>
+<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
+<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/model">https://frontier.live.homelync.io/v1/lookup/model</a> (requires authentication)</li>
+</ul>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>EI1025</code></li>
+<li><code>EI1010</code></li>
+<li><code>EI1000G</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.sourceModel</p>
+<p>Inherited from AbstractReadingBase.sourceModel</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="sourceModelType" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>source<wbr/>Model<wbr/>Type</span><a href="#sourceModelType" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">source<wbr/>Model<wbr/>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Defines the model type of the device (e.g. is it a fire alarm or a environment sensors?)</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>ENVSENSOR</code></li>
+<li><code>FIREALARM</code></li>
+<li><code>GATEWWAY</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.sourceModelType</p>
+<p>Inherited from AbstractReadingBase.sourceModelType</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="unit" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unit</span><a href="#unit" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">unit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The unit in which readings may be reported.</p>
@@ -298,27 +380,9 @@ References:</p>
 <li>GET <a href="https://frontier.live.homelync.io/v1/lookup/measurementUnit">https://frontier.live.homelync.io/v1/lookup/measurementUnit</a> (requires authentication)</li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.unit</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="readingTypeId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>reading<wbr/>Type<wbr/>Id</span><a href="#readingTypeId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">reading<wbr/>Type<wbr/>Id<span class="tsd-signature-symbol">:</span> <a href="../types/ReadingType.html" class="tsd-signature-type" data-tsd-kind="Type alias">ReadingType</a></div>
-<div class="tsd-comment tsd-typography"><p>The type of reading taken by HomeLINK IoT devices.</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Members listed here may be imcomplete, see references below for details on how to obtain a full list.</p>
-
-<a href="#references" id="references" style="color: inherit; text-decoration: none;">
-  <h4>References:</h4>
-</a>
-<ul>
-<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
-<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/readingType">https://frontier.live.homelync.io/v1/lookup/readingType</a>(requires authentication)</li>
-</ul>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.readingTypeId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="value" class="tsd-anchor"></a>
+<p>Implementation of Required.unit</p>
+<p>Inherited from AbstractReadingBase.unit</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="value" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>value</span><a href="#value" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>A floating point numeric value with up-to 4 places of precision, representing the value of the reading in units of
@@ -333,21 +397,8 @@ see: <a href="HomelinkReading.html#unit">&#39;HomelinkReading.unit&#39;</a></p>
 <li><code>CO2</code>: <code>2612.00000</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.value</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="readingDate" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>reading<wbr/>Date</span><a href="#readingDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">reading<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The date/time when a reading was taken.</p>
-<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.readingDate</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="collectionDate" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>collection<wbr/>Date</span><a href="#collectionDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">collection<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The date/time when a reading was collected/received.</p>
-<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkReadingContract.collectionDate</p></aside></section></section></div>
+<p>Implementation of Required.value</p>
+<p>Inherited from AbstractReadingBase.value</p></aside></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -376,22 +427,24 @@ see: <a href="HomelinkReading.html#unit">&#39;HomelinkReading.unit&#39;</a></p>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#__IDENTITY" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>__IDENTITY</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#action" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#actionTimestamp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action<wbr/>Timestamp</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#landlordReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>landlord<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#propertyId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Id</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#propertyReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#propertyDisplayReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Display<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#deviceId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Id</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#deviceSerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Serial<wbr/>Number</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#sourceModel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#sourceModelType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model<wbr/>Type</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#locationNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location<wbr/>Nickname</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#room" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>room</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#location" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#unit" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>unit</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#readingTypeId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>reading<wbr/>Type<wbr/>Id</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#value" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>value</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#readingDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>reading<wbr/>Date</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkReading.html#collectionDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>collection<wbr/>Date</a></li></ul></li></ul></nav></div></div>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#collectionDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>collection<wbr/>Date</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#deviceId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Id</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#devicePhySerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Phy<wbr/>Serial<wbr/>Number</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#deviceSerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Serial<wbr/>Number</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#landlordReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>landlord<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#location" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#locationNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location<wbr/>Nickname</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#manufacturerReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>manufacturer<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#propertyDisplayReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Display<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#propertyId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Id</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#propertyReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#readingDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>reading<wbr/>Date</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#readingTypeId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>reading<wbr/>Type<wbr/>Id</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#room" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>room</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#sourceModel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#sourceModelType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model<wbr/>Type</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#unit" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>unit</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkReading.html#value" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>value</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/main.js"></script></body></html>

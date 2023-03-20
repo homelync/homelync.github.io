@@ -26,7 +26,8 @@
     ],
     "sort": ["kind"],
     "categoryOrder": [
-        "MessageTypes",
+        "Message Types",
+        "Message Child Types",
         "Contracts",
         "Enums",
         "Common"

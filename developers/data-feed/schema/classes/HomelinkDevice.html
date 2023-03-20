@@ -18,20 +18,35 @@
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Represents an action performed against a HomeLINK IoT Device</p>
 
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h3>Example</h3>
+<a href="#example-json" id="example-json" style="color: inherit; text-decoration: none;">
+  <h3>Example JSON</h3>
 </a>
-<pre><code><span class="hl-0">{</span><br/><span class="hl-0">    </span><span class="hl-1">// message meta-data</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;__IDENTITY&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;2acc1d60-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;action&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;ADD&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;actionTimestamp&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;2023-01-07T17:59:18.659Z&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">     </span><span class="hl-1">// property details</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;landlordReference&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;SAMHOMES&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;propertyId&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;12ec1de8-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;propertyReference&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;SAMHOMES_MyHome&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;propertyDisplayReference&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;MyHome&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">    </span><span class="hl-1">// device details</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;deviceId&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;b3bfb596-c25e-4f6f-8c4b-5751b8f0ccc4&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;deviceSerialNumber&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;ED12A3EF&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;sourceModel&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;EI1020&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;sourceModelType&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;ENVSENSOR&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;location&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;GARAGE&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;locationNickname&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;Where I keep the car&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;room&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;Garage&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;installedBy&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;dave@homelync.io&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">    </span><span class="hl-1">// address details</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;address1&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;Buckingham Palace&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;address2&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;Westminster&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;city&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;London&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;postcode&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;SW1A1AA&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;country&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;UK&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;addressConfidence&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;FULL&quot;</span><span class="hl-0">,</span><br/><br/><span class="hl-0">    </span><span class="hl-1">// timestamps</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;installationDate&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;2021-05-07T19:59:18.659Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;replaceByDate&quot;</span><span class="hl-0">: </span><span class="hl-2">&quot;2031-05-08T00:00:00.000Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-2">&quot;uninstallationDate&quot;</span><span class="hl-0">: </span><span class="hl-3">null</span><br/><span class="hl-0"> }</span>
+<pre><code><span class="hl-0">{</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;__IDENTITY&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2acc1d60-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;action&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ADD&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;actionTimestamp&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2023-01-07T17:59:18.659Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;address1&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;Buckingham Palace&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;address2&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;Westminster&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;addressConfidence&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;FULL&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;city&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;London&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;country&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;UK&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;deviceId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;b3bfb596-c25e-4f6f-8c4b-5751b8f0ccc4&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;devicePhySerialNumber&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ED12A3EF&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;deviceSerialNumber&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ED12A3EF&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;installedBy&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;dave@homelync.io&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;installationDate&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2021-05-07T19:59:18.659Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;landlordReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SAMHOMES&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;location&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;GARAGE&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;locationNickname&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;Where I keep the car&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;manufacturerReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;EI&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;postcode&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SW1A1AA&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;propertyDisplayReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;MyHome&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;propertyId&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;12ec1de8-b782-11ed-9a49-0242ac110002&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;propertyReference&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;SAMHOMES_MYHOME&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;sourceModel&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;EI1020&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;sourceModelType&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;ENVSENSOR&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;replaceByDate&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;2031-05-08T00:00:00.000Z&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;room&quot;</span><span class="hl-0">: </span><span class="hl-1">&quot;Garage&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-1">&quot;uninstallationDate&quot;</span><span class="hl-0">: </span><span class="hl-6">null</span><br/><span class="hl-0"> }</span>
 </code></pre>
+
+<a href="#example-database-schema" id="example-database-schema" style="color: inherit; text-decoration: none;">
+  <h3>Example Database Schema</h3>
+</a>
+
+<a href="#mysql" id="mysql" style="color: inherit; text-decoration: none;">
+  <h4>Mysql</h4>
+</a>
+<pre><code><span class="hl-3">CREATE</span><span class="hl-0"> </span><span class="hl-3">TABLE</span><span class="hl-0"> </span><span class="hl-1">`deviceMessage`</span><span class="hl-0"> (</span><br/><span class="hl-0">   </span><span class="hl-1">`__IDENTITY`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`action`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">10</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`actionTimestamp`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`address1`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`address2`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">DEFAULT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`addressConfidence`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">10</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`city`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`country`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`deviceId`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`devicePhySerialNumber`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`deviceSerialNumber`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`installedBy`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">DEFAULT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`installationDate`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`landlordReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`location`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`locationNickname`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">DEFAULT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`manufacturerReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`postcode`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`propertyDisplayReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`propertyId`</span><span class="hl-0"> </span><span class="hl-4">char</span><span class="hl-0">(</span><span class="hl-5">36</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`propertyReference`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`replaceByDate`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">DEFAULT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`room`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`sourceModel`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`sourceModelType`</span><span class="hl-0"> </span><span class="hl-4">varchar</span><span class="hl-0">(</span><span class="hl-5">255</span><span class="hl-0">) </span><span class="hl-3">NOT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-1">`uninstallationDate`</span><span class="hl-0"> </span><span class="hl-4">datetime</span><span class="hl-0">(</span><span class="hl-5">3</span><span class="hl-0">) </span><span class="hl-3">DEFAULT</span><span class="hl-0"> </span><span class="hl-3">NULL</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-3">PRIMARY</span><span class="hl-0"> </span><span class="hl-4">KEY</span><span class="hl-0"> (</span><span class="hl-1">`deviceId`</span><span class="hl-0">, </span><span class="hl-1">`actionTimestamp`</span><span class="hl-0">, </span><span class="hl-1">`action`</span><span class="hl-0">)</span><br/><span class="hl-0">) </span><span class="hl-3">ENGINE</span><span class="hl-0">=</span><span class="hl-2">InnoDB</span><span class="hl-0">;</span>
+</code></pre>
+<ul>
+<li></li>
+</ul>
 </div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">HomelinkDevice</span></li></ul></section>
+<li><span class="tsd-signature-type">AbstractDeviceBase</span>
+<ul class="tsd-hierarchy">
+<li><span class="target">HomelinkDevice</span></li></ul></li></ul></section>
 <section class="tsd-panel">
 <h4>Implements</h4>
 <ul class="tsd-hierarchy">
-<li><span class="tsd-signature-type">HomelinkDeviceContract</span></li></ul></section>
+<li><span class="tsd-signature-type">Required</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ExternalDevicePayload</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -39,34 +54,36 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="HomelinkDevice.html#__IDENTITY" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>__IDENTITY</span></a>
-<a href="HomelinkDevice.html#action" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action</span></a>
-<a href="HomelinkDevice.html#actionTimestamp" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action<wbr/>Timestamp</span></a>
-<a href="HomelinkDevice.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>landlord<wbr/>Reference</span></a>
-<a href="HomelinkDevice.html#propertyId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Id</span></a>
-<a href="HomelinkDevice.html#propertyReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Reference</span></a>
-<a href="HomelinkDevice.html#propertyDisplayReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Display<wbr/>Reference</span></a>
-<a href="HomelinkDevice.html#deviceId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Id</span></a>
-<a href="HomelinkDevice.html#deviceSerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Serial<wbr/>Number</span></a>
-<a href="HomelinkDevice.html#sourceModel" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model</span></a>
-<a href="HomelinkDevice.html#sourceModelType" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model<wbr/>Type</span></a>
-<a href="HomelinkDevice.html#location" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a>
-<a href="HomelinkDevice.html#locationNickname" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location<wbr/>Nickname</span></a>
-<a href="HomelinkDevice.html#room" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>room</span></a>
-<a href="HomelinkDevice.html#installedBy" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>installed<wbr/>By</span></a>
-<a href="HomelinkDevice.html#address1" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address1</span></a>
-<a href="HomelinkDevice.html#address2" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address2</span></a>
-<a href="HomelinkDevice.html#city" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>city</span></a>
-<a href="HomelinkDevice.html#postcode" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>postcode</span></a>
-<a href="HomelinkDevice.html#country" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>country</span></a>
-<a href="HomelinkDevice.html#addressConfidence" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address<wbr/>Confidence</span></a>
-<a href="HomelinkDevice.html#installationDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>installation<wbr/>Date</span></a>
-<a href="HomelinkDevice.html#replaceByDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>replace<wbr/>By<wbr/>Date</span></a>
-<a href="HomelinkDevice.html#uninstallationDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>uninstallation<wbr/>Date</span></a>
+<div class="tsd-index-list"><a href="HomelinkDevice.html#__IDENTITY" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>__IDENTITY</span></a>
+<a href="HomelinkDevice.html#action" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action</span></a>
+<a href="HomelinkDevice.html#actionTimestamp" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>action<wbr/>Timestamp</span></a>
+<a href="HomelinkDevice.html#address1" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address1</span></a>
+<a href="HomelinkDevice.html#address2" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address2</span></a>
+<a href="HomelinkDevice.html#addressConfidence" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>address<wbr/>Confidence</span></a>
+<a href="HomelinkDevice.html#city" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>city</span></a>
+<a href="HomelinkDevice.html#country" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>country</span></a>
+<a href="HomelinkDevice.html#deviceId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Id</span></a>
+<a href="HomelinkDevice.html#devicePhySerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Phy<wbr/>Serial<wbr/>Number</span></a>
+<a href="HomelinkDevice.html#deviceSerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Serial<wbr/>Number</span></a>
+<a href="HomelinkDevice.html#installationDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>installation<wbr/>Date</span></a>
+<a href="HomelinkDevice.html#installedBy" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>installed<wbr/>By</span></a>
+<a href="HomelinkDevice.html#landlordReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>landlord<wbr/>Reference</span></a>
+<a href="HomelinkDevice.html#location" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a>
+<a href="HomelinkDevice.html#locationNickname" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location<wbr/>Nickname</span></a>
+<a href="HomelinkDevice.html#manufacturerReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>manufacturer<wbr/>Reference</span></a>
+<a href="HomelinkDevice.html#postcode" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>postcode</span></a>
+<a href="HomelinkDevice.html#propertyDisplayReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Display<wbr/>Reference</span></a>
+<a href="HomelinkDevice.html#propertyId" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Id</span></a>
+<a href="HomelinkDevice.html#propertyReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>property<wbr/>Reference</span></a>
+<a href="HomelinkDevice.html#replaceByDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>replace<wbr/>By<wbr/>Date</span></a>
+<a href="HomelinkDevice.html#room" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>room</span></a>
+<a href="HomelinkDevice.html#sourceModel" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model</span></a>
+<a href="HomelinkDevice.html#sourceModelType" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model<wbr/>Type</span></a>
+<a href="HomelinkDevice.html#uninstallationDate" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>uninstallation<wbr/>Date</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="__IDENTITY" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="__IDENTITY" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>__IDENTITY</span><a href="#__IDENTITY" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <div class="tsd-signature">__IDENTITY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The unique identifier of an entity.</p>
@@ -78,14 +95,16 @@
 easily understand which field should be used as a unique domain key. The value contained within
 <code>__IDENTITY</code> will also be present within the message under an entity specific field name e.g. <code>propertyId</code>, <code>deviceId</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.__IDENTITY</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="action" class="tsd-anchor"></a>
+<p>Implementation of Required.__IDENTITY</p>
+<p>Inherited from AbstractDeviceBase.__IDENTITY</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="action" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action</span><a href="#action" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">action<span class="tsd-signature-symbol">:</span> <a href="../enums/DeviceOperationAction.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DeviceOperationAction</a></div>
 <div class="tsd-comment tsd-typography"><p>Specifies the action that generated a message.</p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.action</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="actionTimestamp" class="tsd-anchor"></a>
+<p>Implementation of Required.action</p>
+<p>Inherited from AbstractDeviceBase.action</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="actionTimestamp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>action<wbr/>Timestamp</span><a href="#actionTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">action<wbr/>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The UTC time at which and action was performed.</p>
@@ -100,67 +119,78 @@ easily understand which field should be used as a unique domain key. The value c
 </a>
 <p>   <code>2023-02-21T10:11:12.123Z</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.actionTimestamp</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="landlordReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>Your (landlords) unique HomeLINK reference</p>
+<p>Implementation of Required.actionTimestamp</p>
+<p>Inherited from AbstractDeviceBase.actionTimestamp</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="address1" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>address1</span><a href="#address1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">address1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>First line of an address, normally house name of number</p>
 
 <a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
   <h4>Remarks</h4>
 </a>
-<p>This will match the landlordReference you specified when subscribing to this feed.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h5>Example</h5>
-</a>
-<p> <code>SAMHOMES</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.landlordReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Id</span><a href="#propertyId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The unique identifier for the property.</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Is a uuid (v4) aka a GUID.</p>
+<p>Will also include a flat identifier, if relavant</p>
 
 <a href="#example" id="example" style="color: inherit; text-decoration: none;">
   <h4>Example</h4>
 </a>
-<p><code>12ec1de8-b782-11ed-9a49-0242ac110002</code></p>
+<p>Buckingham Palace</p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.propertyId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Reference</span><a href="#propertyReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The unique string reference of the property (UPRN), as entered at installation time</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Please note it will be prefixed with your <code>landlordReference</code></p>
+<p>Implementation of Required.address1</p>
+<p>Inherited from AbstractDeviceBase.address1</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="address2" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>address2</span><a href="#address2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">address2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Second line of an address, normally area. <code>nullable</code></p>
 
 <a href="#example" id="example" style="color: inherit; text-decoration: none;">
   <h4>Example</h4>
 </a>
-<p><code>SAMHOMES_MyHome</code></p>
+<p><code>Westminster</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.propertyReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="propertyDisplayReference" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>property<wbr/>Display<wbr/>Reference</span><a href="#propertyDisplayReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">property<wbr/>Display<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The unique reference of the property (UPRN) as it id displayed on the dashboard.</p>
+<p>Implementation of Required.address2</p>
+<p>Inherited from AbstractDeviceBase.address2</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="addressConfidence" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>address<wbr/>Confidence</span><a href="#addressConfidence" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">address<wbr/>Confidence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>A confidence indicator advising if HomeLINK has been able too successfully geo-code the address.</p>
 
 <a href="#example" id="example" style="color: inherit; text-decoration: none;">
   <h4>Example</h4>
 </a>
-<p><code>MyHome</code></p>
+<ul>
+<li><code>FULL</code></li>
+<li><code>PARTIAL</code></li>
+<li><code>NONE</code></li>
+</ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.propertyDisplayReference</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="deviceId" class="tsd-anchor"></a>
+<p>Implementation of Required.addressConfidence</p>
+<p>Inherited from AbstractDeviceBase.addressConfidence</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="city" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>city</span><a href="#city" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">city<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The city or town to which the address belongs</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>London</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.city</p>
+<p>Inherited from AbstractDeviceBase.city</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="country" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>country</span><a href="#country" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">country<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The country to which an address blongs.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>UK</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.country</p>
+<p>Inherited from AbstractDeviceBase.country</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="deviceId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>device<wbr/>Id</span><a href="#deviceId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">device<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The unique identifier for the device.</p>
@@ -176,11 +206,19 @@ but the <code>deviceSerialNumber</code> will remain consistent.</p>
 </a>
 <p><code>2acc1d60-b782-11ed-9a49-0242ac110002</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.deviceId</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="deviceSerialNumber" class="tsd-anchor"></a>
+<p>Implementation of Required.deviceId</p>
+<p>Inherited from AbstractDeviceBase.deviceId</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="devicePhySerialNumber" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>device<wbr/>Phy<wbr/>Serial<wbr/>Number</span><a href="#devicePhySerialNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">device<wbr/>Phy<wbr/>Serial<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>{@inheritDoc DeviceFields.physicalSerialNumber}</p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.devicePhySerialNumber</p>
+<p>Inherited from AbstractDeviceBase.devicePhySerialNumber</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="deviceSerialNumber" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>device<wbr/>Serial<wbr/>Number</span><a href="#deviceSerialNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">device<wbr/>Serial<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The real-world serial number of the device</p>
+<div class="tsd-comment tsd-typography"><p>The unique serial number of the device</p>
 
 <a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
   <h4>Remarks</h4>
@@ -195,48 +233,47 @@ but the <code>deviceSerialNumber</code> will remain consistent.</p>
 <li><code>AB56EDAA-ED12A3EF</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.deviceSerialNumber</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="sourceModel" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>source<wbr/>Model</span><a href="#sourceModel" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">source<wbr/>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The model of the device.</p>
+<p>Implementation of Required.deviceSerialNumber</p>
+<p>Inherited from AbstractDeviceBase.deviceSerialNumber</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="installationDate" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>installation<wbr/>Date</span><a href="#installationDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">installation<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The date/time denoting when a device was installed.</p>
+<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.installationDate</p>
+<p>Inherited from AbstractDeviceBase.installationDate</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="installedBy" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>installed<wbr/>By</span><a href="#installedBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">installed<wbr/>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The username of the person who last installed a device at this property.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>dave@homelync.io</code>
+*</p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.installedBy</p>
+<p>Inherited from AbstractDeviceBase.installedBy</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="landlordReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>landlord<wbr/>Reference</span><a href="#landlordReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">landlord<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Your (landlords) unique HomeLINK reference</p>
 
 <a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
   <h4>Remarks</h4>
 </a>
-<p>Is a long dynamic enum/lookup list not captured in this type-doc.
-References:</p>
-<ul>
-<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
-<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/model">https://frontier.live.homelync.io/v1/lookup/model</a> (requires authentication)</li>
-</ul>
+<p>This will match the landlordReference you specified when subscribing to this feed.</p>
 
 <a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
+  <h5>Example</h5>
 </a>
-<ul>
-<li><code>EI1025</code></li>
-<li><code>EI1010</code></li>
-<li><code>EI1000G</code></li>
-</ul>
+<p> <code>SAMHOMES</code></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.sourceModel</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="sourceModelType" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>source<wbr/>Model<wbr/>Type</span><a href="#sourceModelType" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">source<wbr/>Model<wbr/>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/SourceModelType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SourceModelType</a></div>
-<div class="tsd-comment tsd-typography"><p>Defines the model type of the device (e.g. is it a fire alarm or a environment sensors?)</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<ul>
-<li><code>ENVSENSOR</code></li>
-<li><code>FIREALARM</code></li>
-<li><code>GATEWWAY</code></li>
-</ul>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.sourceModelType</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="location" class="tsd-anchor"></a>
+<p>Implementation of Required.landlordReference</p>
+<p>Inherited from AbstractDeviceBase.landlordReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="location" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>location</span><a href="#location" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>A value denoting the unique identifier of the room type in which a device is installed</p>
@@ -263,8 +300,9 @@ References:</p>
 <li><code>KITCHEN</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.location</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="locationNickname" class="tsd-anchor"></a>
+<p>Implementation of Required.location</p>
+<p>Inherited from AbstractDeviceBase.location</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="locationNickname" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>location<wbr/>Nickname</span><a href="#locationNickname" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">location<wbr/>Nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>An optional additional free text description of where the device is installed. <code>nullable</code></p>
@@ -277,8 +315,96 @@ References:</p>
 <li><code>By the main stair case</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.locationNickname</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="room" class="tsd-anchor"></a>
+<p>Implementation of Required.locationNickname</p>
+<p>Inherited from AbstractDeviceBase.locationNickname</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="manufacturerReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>manufacturer<wbr/>Reference</span><a href="#manufacturerReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">manufacturer<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Defines the manufacturer of the device.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>EI</code></li>
+</ul>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.manufacturerReference</p>
+<p>Inherited from AbstractDeviceBase.manufacturerReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="postcode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>postcode</span><a href="#postcode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">postcode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>A postcode</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Will not contain any spaces. All postcodes have spaces stripped at creation time.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>SW1A1AA</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.postcode</p>
+<p>Inherited from AbstractDeviceBase.postcode</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="propertyDisplayReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Display<wbr/>Reference</span><a href="#propertyDisplayReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Display<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique reference of the property (UPRN) as it id displayed on the dashboard.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>MyHome</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.propertyDisplayReference</p>
+<p>Inherited from AbstractDeviceBase.propertyDisplayReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="propertyId" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Id</span><a href="#propertyId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique identifier for the property.</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<ul>
+<li>Is a uuid (v4) aka a GUID.</li>
+</ul>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>12ec1de8-b782-11ed-9a49-0242ac110002</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.propertyId</p>
+<p>Inherited from AbstractDeviceBase.propertyId</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="propertyReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>property<wbr/>Reference</span><a href="#propertyReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">property<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The unique string reference of the property (UPRN), as entered at installation time</p>
+
+<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
+  <h4>Remarks</h4>
+</a>
+<p>Please note it will be prefixed with your <code>landlordReference</code></p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<p><code>SAMHOMES_MYHOME</code></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.propertyReference</p>
+<p>Inherited from AbstractDeviceBase.propertyReference</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="replaceByDate" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>replace<wbr/>By<wbr/>Date</span><a href="#replaceByDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">replace<wbr/>By<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The date/time denoting when a device needs replacing.</p>
+<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
+</div><aside class="tsd-sources">
+<p>Implementation of Required.replaceByDate</p>
+<p>Inherited from AbstractDeviceBase.replaceByDate</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="room" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>room</span><a href="#room" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">room<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>A friendly display name for <code>location</code> - see: <a href="../interfaces/CommonFields.html#location">CommonFields.location</a></p>
@@ -305,120 +431,58 @@ References:</p>
 <li><code>KITCHEN</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.room</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="installedBy" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>installed<wbr/>By</span><a href="#installedBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">installed<wbr/>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The username of the person who last installed a device at this property.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>dave@homelync.io</code>
-*</p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.installedBy</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="address1" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>address1</span><a href="#address1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">address1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>First line of an address, normally house name of number</p>
+<p>Implementation of Required.room</p>
+<p>Inherited from AbstractDeviceBase.room</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="sourceModel" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>source<wbr/>Model</span><a href="#sourceModel" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">source<wbr/>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The model of the device.</p>
 
 <a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
   <h4>Remarks</h4>
 </a>
-<p>Will also include a flat identifier, if relavant</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p>Buckingham Palace</p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.address1</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="address2" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>address2</span><a href="#address2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">address2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>Second line of an address, normally area. <code>nullable</code></p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>Westminster</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.address2</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="city" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>city</span><a href="#city" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">city<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The city or town to which the address belongs</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>London</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.city</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="postcode" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>postcode</span><a href="#postcode" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">postcode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>A postcode</p>
-
-<a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
-  <h4>Remarks</h4>
-</a>
-<p>Will not contain any spaces. All postcodes have spaces stripped at creation time.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>SW1A1AA</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.postcode</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="country" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>country</span><a href="#country" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">country<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The country to which an address blongs.</p>
-
-<a href="#example" id="example" style="color: inherit; text-decoration: none;">
-  <h4>Example</h4>
-</a>
-<p><code>UK</code></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.country</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="addressConfidence" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>address<wbr/>Confidence</span><a href="#addressConfidence" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">address<wbr/>Confidence<span class="tsd-signature-symbol">:</span> <a href="../enums/AddressConfidence.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AddressConfidence</a></div>
-<div class="tsd-comment tsd-typography"><p>A confidence indicator advising if HomeLINK has been able too successfully geo-code the address.</p>
+<p>Is a long dynamic enum/lookup list not captured in this type-doc.
+References:</p>
+<ul>
+<li><a href="https://frontier.live.homelync.io/api-docs/#/lookup/Get">Frontier Lookup API Docs</a></li>
+<li>GET <a href="https://frontier.live.homelync.io/v1/lookup/model">https://frontier.live.homelync.io/v1/lookup/model</a> (requires authentication)</li>
+</ul>
 
 <a href="#example" id="example" style="color: inherit; text-decoration: none;">
   <h4>Example</h4>
 </a>
 <ul>
-<li><code>FULL</code></li>
-<li><code>PARTIAL</code></li>
-<li><code>NONE</code></li>
+<li><code>EI1025</code></li>
+<li><code>EI1010</code></li>
+<li><code>EI1000G</code></li>
 </ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.addressConfidence</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="installationDate" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>installation<wbr/>Date</span><a href="#installationDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">installation<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The date/time denoting when a device was installed.</p>
-<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
+<p>Implementation of Required.sourceModel</p>
+<p>Inherited from AbstractDeviceBase.sourceModel</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="sourceModelType" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>source<wbr/>Model<wbr/>Type</span><a href="#sourceModelType" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">source<wbr/>Model<wbr/>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/SourceModelType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SourceModelType</a></div>
+<div class="tsd-comment tsd-typography"><p>Defines the model type of the device (e.g. is it a fire alarm or a environment sensors?)</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>ENVSENSOR</code></li>
+<li><code>FIREALARM</code></li>
+<li><code>GATEWWAY</code></li>
+</ul>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.installationDate</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="replaceByDate" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>replace<wbr/>By<wbr/>Date</span><a href="#replaceByDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">replace<wbr/>By<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The date/time denoting when a device needs replacing.</p>
-<p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
-</div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.replaceByDate</p></aside></section>
-<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="uninstallationDate" class="tsd-anchor"></a>
+<p>Implementation of Required.sourceModelType</p>
+<p>Inherited from AbstractDeviceBase.sourceModelType</p></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="uninstallationDate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>uninstallation<wbr/>Date</span><a href="#uninstallationDate" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">uninstallation<wbr/>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The date/time denoting when a device was uninstalled. <code>nullable</code></p>
 <p>see: <a href="../interfaces/DataTypeDescriptions.html#dateTime">&#39;DataTypeDescriptions.dateTime&#39;</a></p>
 </div><aside class="tsd-sources">
-<p>Implementation of HomelinkDeviceContract.uninstallationDate</p></aside></section></section></div>
+<p>Implementation of Required.uninstallationDate</p>
+<p>Inherited from AbstractDeviceBase.uninstallationDate</p></aside></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -444,30 +508,32 @@ References:</p>
 <ul>
 <li class="current tsd-kind-class"><a href="HomelinkDevice.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg><span>Homelink<wbr/>Device</span></a>
 <ul>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#__IDENTITY" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>__IDENTITY</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#action" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#actionTimestamp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action<wbr/>Timestamp</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#landlordReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>landlord<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#propertyId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Id</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#propertyReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#propertyDisplayReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Display<wbr/>Reference</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#deviceId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Id</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#deviceSerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Serial<wbr/>Number</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#sourceModel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#sourceModelType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model<wbr/>Type</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#location" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#locationNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location<wbr/>Nickname</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#room" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>room</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#installedBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>installed<wbr/>By</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#address1" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address1</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#address2" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address2</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#city" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>city</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#postcode" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>postcode</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#country" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>country</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#addressConfidence" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address<wbr/>Confidence</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#installationDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>installation<wbr/>Date</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#replaceByDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>replace<wbr/>By<wbr/>Date</a></li>
-<li class="tsd-kind-property tsd-parent-kind-class"><a href="HomelinkDevice.html#uninstallationDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>uninstallation<wbr/>Date</a></li></ul></li></ul></nav></div></div>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#__IDENTITY" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>__IDENTITY</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#action" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#actionTimestamp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>action<wbr/>Timestamp</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#address1" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address1</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#address2" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address2</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#addressConfidence" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>address<wbr/>Confidence</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#city" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>city</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#country" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>country</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#deviceId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Id</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#devicePhySerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Phy<wbr/>Serial<wbr/>Number</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#deviceSerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Serial<wbr/>Number</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#installationDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>installation<wbr/>Date</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#installedBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>installed<wbr/>By</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#landlordReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>landlord<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#location" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#locationNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location<wbr/>Nickname</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#manufacturerReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>manufacturer<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#postcode" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>postcode</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#propertyDisplayReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Display<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#propertyId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Id</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#propertyReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>property<wbr/>Reference</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#replaceByDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>replace<wbr/>By<wbr/>Date</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#room" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>room</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#sourceModel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#sourceModelType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model<wbr/>Type</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="HomelinkDevice.html#uninstallationDate" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>uninstallation<wbr/>Date</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/main.js"></script></body></html>

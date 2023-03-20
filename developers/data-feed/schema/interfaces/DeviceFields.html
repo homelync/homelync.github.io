@@ -31,9 +31,11 @@
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="DeviceFields.html#deviceId" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>device<wbr/>Id</span></a>
 <a href="DeviceFields.html#deviceSerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Serial<wbr/>Number</span></a>
+<a href="DeviceFields.html#devicePhySerialNumber" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>device<wbr/>Phy<wbr/>Serial<wbr/>Number</span></a>
 <a href="DeviceFields.html#sourceModel" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model</span></a>
 <a href="DeviceFields.html#sourceModelType" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>source<wbr/>Model<wbr/>Type</span></a>
 <a href="DeviceFields.html#locationNickname" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location<wbr/>Nickname</span></a>
+<a href="DeviceFields.html#manufacturerReference" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>manufacturer<wbr/>Reference</span></a>
 <a href="DeviceFields.html#installedBy" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>installed<wbr/>By</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -57,7 +59,7 @@ but the <code>deviceSerialNumber</code> will remain consistent.</p>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="deviceSerialNumber" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>device<wbr/>Serial<wbr/>Number</span><a href="#deviceSerialNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">device<wbr/>Serial<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The real-world serial number of the device</p>
+<div class="tsd-comment tsd-typography"><p>The unique serial number of the device</p>
 
 <a href="#remarks" id="remarks" style="color: inherit; text-decoration: none;">
   <h4>Remarks</h4>
@@ -70,6 +72,18 @@ but the <code>deviceSerialNumber</code> will remain consistent.</p>
 <ul>
 <li><code>ED12A3EF</code></li>
 <li><code>AB56EDAA-ED12A3EF</code></li>
+</ul>
+</div></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="devicePhySerialNumber" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>device<wbr/>Phy<wbr/>Serial<wbr/>Number</span><a href="#devicePhySerialNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">device<wbr/>Phy<wbr/>Serial<wbr/>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The real-world serial number of the device as printed on the hardward, not garunteed to be unique.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>ED12A3EF</code></li>
 </ul>
 </div></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="sourceModel" class="tsd-anchor"></a>
@@ -123,6 +137,18 @@ References:</p>
 <li><code>By the main stair case</code></li>
 </ul>
 </div></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="manufacturerReference" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>manufacturer<wbr/>Reference</span><a href="#manufacturerReference" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">manufacturer<wbr/>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Defines the manufacturer of the device.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h4>Example</h4>
+</a>
+<ul>
+<li><code>EI</code></li>
+</ul>
+</div></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="installedBy" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>installed<wbr/>By</span><a href="#installedBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">installed<wbr/>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -161,9 +187,11 @@ References:</p>
 <ul>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#deviceId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Id</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#deviceSerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Serial<wbr/>Number</a></li>
+<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#devicePhySerialNumber" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>device<wbr/>Phy<wbr/>Serial<wbr/>Number</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#sourceModel" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#sourceModelType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>source<wbr/>Model<wbr/>Type</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#locationNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>location<wbr/>Nickname</a></li>
+<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#manufacturerReference" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>manufacturer<wbr/>Reference</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeviceFields.html#installedBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>installed<wbr/>By</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
